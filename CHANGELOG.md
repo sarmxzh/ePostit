@@ -15,3 +15,4 @@
 - merged anjalie-kini's CONTRIBUTING.md edits pull request
 - created initial Outlook addin 
 - made minor edits to READ_ME.md
+- added .gitignore
