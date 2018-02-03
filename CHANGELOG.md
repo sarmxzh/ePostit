@@ -8,3 +8,10 @@
 - edited READ_ME.md
 - continuing to work on C# and Visual Studio
 
+### Feb 1
+- worked through a tutorial for Outlook addin development
+
+### Feb 2 
+- merged anjalie-kini's CONTRIBUTING.md edits pull request
+- created initial Outlook addin 
+- made minor edits to READ_ME.md
