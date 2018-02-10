@@ -19,3 +19,6 @@
 
 ### Feb 6
 - worked through adding button tutorial for Outlook addin development
+
+### Feb 9
+- updated READ_ME.md and CONTRIBUTING.md
