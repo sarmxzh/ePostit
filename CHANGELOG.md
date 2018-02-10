@@ -9,10 +9,13 @@
 - continuing to work on C# and Visual Studio
 
 ### Feb 1
-- worked through a tutorial for Outlook addin development
+- worked through a overview tutorial for Outlook addin development
 
 ### Feb 2 
 - merged anjalie-kini's CONTRIBUTING.md edits pull request
 - created initial Outlook addin 
 - made minor edits to READ_ME.md
 - added .gitignore
+
+### Feb 6
+- worked through adding button tutorial for Outlook addin development
