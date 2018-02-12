@@ -22,3 +22,13 @@
 
 ### Feb 9
 - updated READ_ME.md and CONTRIBUTING.md
+
+### Feb 10
+- added a post-it note-like image to the add-in (not yet committed)
+
+### Feb 11
+- edited READ_ME.md
+- committed and pushed a post-it note-like image to the add-in to the repo
+- created and issue
+
+
