@@ -7,7 +7,6 @@ To be able to use the add-in on Outlook.com and/or Outlook, you need to have an 
 First download this project onto your computer and open Outlook.com or Outlook.
 
 ### For Outlook.com
-- Download this project
 - Click on the Settings icon on the top right corner of your screen.
 - Click on 'Manage Add-Ins'
 - Go to 'My Add-ins'
@@ -16,7 +15,5 @@ First download this project onto your computer and open Outlook.com or Outlook.
 
 The Post-It Tag add-in should now be in your add-ins for Outlook.com. To see them, click on any message and there should be a logo, or logos (depending on how many addins you have), next to the Reply All button.
 
-### For Outlook
-
-## Potential problems when initiating the project
+## Insecure Site issue when initiating the project
 In the case that you may run into insecure site issues see [this link](https://github.com/OfficeDev/generator-office/blob/master/src/docs/ssl.md) and [this link](https://github.com/OfficeDev/generator-office/issues/244). If there are still issues with it coming up as an insecure site, try running the project with incognito mode.
