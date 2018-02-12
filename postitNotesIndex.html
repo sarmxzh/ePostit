@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = 'UTF-8'>
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>ePost-It</title>
+
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.debug.js"></script>
+
+  <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+  <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.components.css" />
+
+  <link href="app.css" rel="stylesheet" type="text/css" />
+
+  <style>
+  *{
+    margin:0;
+    padding:0;
+  }
+  body{
+    font-family:arial,sans-serif;
+    font-size:100%;
+    margin:3em;
+    background:#ffffff;
+    /* color:#070707; */
+  }
+
+  a{
+    color:#000000;
+    background:#60caff;
+    display:block;
+    height:300px;
+    width:200px;
+    padding:10px;
+  }
+  div{
+    margin-bottom: 50px;
+  }
+  p{
+    margin-bottom: 5px;
+  }
+  .postittext {
+    width: 195px;
+    height: 260px;
+  }
+  </style>
+</head>
+
+<body>
+  <div>
+    <a>
+      <h2 style="text-align:center; margin-bottom: 5px;">Email Summary</h2>
+      <p id="postItText"></p>
+      <input type="text" class="postittext" id="userInputPostItText">
+    </a>
+  </div>
+  <div>
+    <h2> Search </h2>
+  </div>
+
+<script>
+document.getElementById("userInputPostItText").addEventListener("keypress", function(e){
+  var key = e.keyCode;
+  var textInput = document.getElementById("postItText")
+    if (key === 13) {
+      textInput.innerHTML = document.getElementById("userInputPostItText").value;
+      textInput.setAttribute("type", "hidden");
+    }
+})
+</script>
+</body>
+
+</html>
