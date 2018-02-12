@@ -10,7 +10,8 @@ Thank you for your interest in this project! Everyone is invited and welcome to 
 - For those just getting started with pull requests, you can find a howto [here](https://help.github.com/articles/using-pull-requests/)
 
 # To Do:
-- Create a Post It functionality for emails
+- Create a Post-It functionality for emails
+- Create a way for user to search for Post-It Tags using key words
 - For more specific fixes, see [issues](https://github.com/sarmxzh/PostITab/issues)
 
 ## Community Expectations
