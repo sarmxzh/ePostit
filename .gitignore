@@ -1,1 +1,6 @@
 .DS_Store
+
+openssl.cnf
+server.csr
+server.key
+server.key.copy
