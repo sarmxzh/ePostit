@@ -67,6 +67,7 @@ document.getElementById("userInputPostItText").addEventListener("keypress", func
     if (key === 13) {
       textInput.innerHTML = document.getElementById("userInputPostItText").value;
       textInput.setAttribute("type", "hidden");
+      document.getElementById("userInputPostItText").style.display = "none";
     }
 })
 </script>
