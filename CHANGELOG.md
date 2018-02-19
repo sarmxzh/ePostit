@@ -29,6 +29,8 @@
 ### Feb 11
 - edited READ_ME.md
 - committed and pushed a post-it note-like image to the add-in to the repo
-- created and issue
+- created an issue
 
-
+### Feb 19
+- merged JanglePerk's PR
+- 
