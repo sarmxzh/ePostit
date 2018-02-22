@@ -4,7 +4,7 @@ ePostit is an Outlook Add-In that will allow users to create post-it summaries o
 
 ## Running the ePostit Add-in on Outlook.com and/or Outlook
 To be able to use the add-in on Outlook.com and/or Outlook, you need to have an Outlook mail account.
-First download this project onto your computer. Then type `npm start ` in terminal and press enter. You should see a webpage popup with a Connected to BrowserSync message in the top right corner. If you see some Insecure Site error or some other error, go to [here](https://github.com/sarmxzh/ePostit#insecure-site-issue-when-initiating-the-project).
+First download this project onto your computer. Then type `npm start ` in terminal and press enter. You should see a webpage popup with a Connected to BrowserSync message in the top right corner. If you see some Insecure Site error or some other error, go to [Insecure Site Issues](https://github.com/sarmxzh/ePostit#insecure-site-issue-when-initiating-the-project).
 
 ### For Outlook.com
 - Open **Outlook.com**
@@ -23,5 +23,5 @@ First download this project onto your computer. Then type `npm start ` in termin
 
 The ePostit add-in should now be in your add-ins for Outlook.com. To see them, click on any message and there should be a logo, or logos (depending on how many addins you have), next to the Reply All button.
 
-## Insecure Site issue when initiating the project
+## Insecure Site issues when initiating the project
 In the case that you may run into insecure site issues see [this link](https://github.com/OfficeDev/generator-office/blob/master/src/docs/ssl.md) and [this link](https://github.com/OfficeDev/generator-office/issues/244). If there are still issues with it coming up as an insecure site, try running the project with incognito mode.
