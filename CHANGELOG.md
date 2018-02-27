@@ -33,4 +33,7 @@
 
 ### Feb 19
 - merged JanglePerk's PR
-- 
+
+### Feb 22
+- merged JanglePerks' PR
+- edited READ_ME.md

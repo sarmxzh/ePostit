@@ -1,8 +1,8 @@
 # Contributing Guidelines
 
-Thank you for your interest in this project! Everyone is invited and welcome to contribute to PostITab. Your contributions will be much appreciated and will help this project a lot. 
+Thank you for your interest in ePostit! Everyone is invited and welcome to contribute to this project. Your contributions will be much appreciated and will help this project a lot. 
 - If you are a developer, you could add or modify code.
-- If not, help with documentation is always appreciated
+- If not, help with documentation is always appreciated and design of the add-in
 
 ## Ways to Contribute
 - Report any problems/suggestions that you may have into when running the code (once the code is up!) in [this library's issues](https://github.com/sarmxzh/PostITab/issues). 
@@ -17,4 +17,4 @@ Thank you for your interest in this project! Everyone is invited and welcome to 
 ## Community Expectations
 - See [CODE_OF_CONDUCT.md](https://github.com/sarmxzh/PostITab/blob/master/CODE_OF_CONDUCT.md)
 
-Still interested? Then you should take a look at the README.md to get more details on the project.
+Want to learn more? Take a look at the README.md to get more details on the project.
