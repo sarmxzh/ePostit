@@ -1,3 +1,5 @@
+console.clear()
+
 const DB = new MemoDB();
 
 async function addRandom(emailId) {
