@@ -27,14 +27,14 @@
     /* color:#070707; */
   }
 
-  a{
+  /* a{
     color:#000000;
     background:#60caff;
     display:block;
     height:300px;
     width:200px;
     padding:10px;
-  }
+  } */
   div{
     margin-bottom: 50px;
   }
@@ -50,26 +50,40 @@
 
 <body>
   <div>
+    <h2> Add Post-it </h2>
+    <button id="addPostit"> Add Post-it </button>
+  </div>
+  <!-- <div>
     <a>
       <h2 style="text-align:center; margin-bottom: 5px;">Email Summary</h2>
       <p id="postItText"></p>
-      <input type="text" class="postittext" id="userInputPostItText">
+      <input type="text" class="postittext" id="userInputPostitText">
     </a>
-  </div>
-  <div>
+  </div> -->
+  <div id='searchFn'>
     <h2> Search </h2>
+    <input type="text">
   </div>
 
 <script>
-document.getElementById("userInputPostItText").addEventListener("keypress", function(e){
-  var key = e.keyCode;
-  var textInput = document.getElementById("postItText")
-    if (key === 13) {
-      textInput.innerHTML = document.getElementById("userInputPostItText").value;
-      textInput.setAttribute("type", "hidden");
-      document.getElementById("userInputPostItText").style.display = "none";
-    }
+document.getElementById("addPostit").addEventListener("click", function() {
+  var postitTextBox = document.createElement('input');
+  postitTextBox.type = "text";
+  postitTextBox.classList = "postittext";
+  postitTextBox.id = "userInputPostitText";
+  postitTextBox.style.backgroundColor = "yellow";
+  document.body.insertBefore(document.createElement('div').appendChild(document.createElement('a').appendChild(postitTextBox)), document.getElementById("searchFn"))
 })
+
+// document.getElementById("userInputPostItText").addEventListener("keypress", function(e){
+//   var key = e.keyCode;
+//   var textInput = document.getElementById("postItText")
+//     if (key === 13) {
+//       textInput.innerHTML = document.getElementById("userInputPostItText").value;
+//       textInput.setAttribute("type", "hidden");
+//       document.getElementById("userInputPostItText").style.display = "none";
+//     }
+// })
 </script>
 </body>
 
