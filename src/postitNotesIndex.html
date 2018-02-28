@@ -9,11 +9,11 @@
 
   <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.debug.js"></script>
 
-  <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
-  <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.components.css" />
+  <link rel="stylesheet" href="../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+  <link rel="stylesheet" href="../node_modules/office-ui-fabric-js/dist/css/fabric.components.css" />
 
-  <link href="app.css" rel="stylesheet" type="text/css" />
-  <script src="indexDB/lib/MemoDB.js"></script>
+  <link href="../config/app.css" rel="stylesheet" type="text/css" />
+  <script src="../indexDB/lib/MemoDB.js"></script>
 
   <style>
   *{
@@ -25,7 +25,6 @@
     font-size:100%;
     margin:3em;
     background:#ffffff;
-    /* color:#070707; */
   }
 
   div{
@@ -85,8 +84,9 @@ searchBox.addEventListener("keypress", function(e){
   var key = e.keyCode;
   if(key === 13){
     var input = searchBox.value;
+    db.searchNotes(input);
     // var emails = db.searchNotes(input);
-    console.log(db.searchNotes(input))
+    // console.log(db.searchNotes(input))
   }
 });
 </script>

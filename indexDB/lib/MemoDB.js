@@ -23,7 +23,7 @@ class MemoDB {
     async searchNotes(phrase){
       const db = await this.openDB();
       const objStore = db.transaction(["items"], "readwrite").objectStore("items");
-      var emailIdArray = [];
+      // var emailIdArray = [];
 
       var request = objStore.openCursor();
       request.onsuccess = function(event) {
@@ -33,11 +33,11 @@ class MemoDB {
           // console.log(emailNote.value.data)
           if (emailNote.value.data.indexOf(phrase) !== -1) {
             // emailIdArray.push(emailNote.value.emailId)
-            console.log("We found a row with value: " + JSON.stringify(emailNote.value.emailId));
+            console.log("Email Id:" + JSON.stringify(emailNote.value.emailId));
           }
           emailNote.continue();
         }
-        return emailIdArray;
+        // return emailIdArray;
       };
     }
 
