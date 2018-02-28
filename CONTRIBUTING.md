@@ -10,7 +10,7 @@ Thank you for your interest in ePostit! Experienced developers and newcomers ali
 
 ## To Do:
 ePostit's goal is to make searching for particular important pieces of information in emails more efficient and personalized and less cluttered. Thus, the main aspects to work on are:
-- Database for user's post-its (currently using indexDB)
+- Database for user's post-its (currently using indexedDB)
   - Need enhance security
 - Search functionality (currently printing the relevant emails in console.log)
   - Return actual emails, or at least links to the emails or post-its
