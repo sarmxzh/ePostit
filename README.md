@@ -27,4 +27,4 @@ The ePostit add-in should now be in your add-ins for Outlook.com. To see them, c
 In the case that you may run into insecure site issues see [this issue](https://github.com/OfficeDev/generator-office/blob/master/src/docs/ssl.md) and [this issue](https://github.com/OfficeDev/generator-office/issues/244), and follow the steps outlined in them for verifying the security certificates. If there are still issues with it coming up as an insecure site, try running the project with incognito mode.
 
 ## Want to Contribute?
-All contributions welcome! Please see [Contributing.md](https://github.com/sarmxzh/ePostit/blob/master/CONTRIBUTING.md) for more information.
+All contributions are welcome! Please see [Contributing.md](https://github.com/sarmxzh/ePostit/blob/master/CONTRIBUTING.md) for more information.
