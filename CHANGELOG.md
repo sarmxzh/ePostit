@@ -35,5 +35,20 @@
 - merged JanglePerk's PR
 
 ### Feb 22
-- merged JanglePerks' PR
+- merged JanglePerk's PR
 - edited READ_ME.md
+
+### Feb 23
+- looked through indexedDB documentation and tutorial
+
+### Feb 26
+- edited post-it note appearance (from textbox in <a> to simply just a textbox)
+  
+### Feb 27
+- merged JanglePerk's PR
+- added database using indexedDB
+- added search functionality
+
+### Feb 28
+- commited changes to code
+- edited documentation
