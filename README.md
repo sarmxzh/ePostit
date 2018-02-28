@@ -28,3 +28,6 @@ In the case that you may run into insecure site issues see [this issue](https://
 
 ## Want to Contribute?
 All contributions are welcome! Please see [Contributing.md](https://github.com/sarmxzh/ePostit/blob/master/CONTRIBUTING.md) for more information.
+
+## License
+[MIT License](https://github.com/sarmxzh/ePostit/blob/master/LICENSE)
