@@ -114,45 +114,6 @@
           </ExtensionPoint>
           <!-- Go to http://aka.ms/ExtensionPointsCommands to learn how to add more Extension Points: MessageRead, AppointmentOrganizer, AppointmentAttendee -->
 
-          <!-- Following ExtensionPoint from GitTheGist Tutorial -->
-          <!-- <ExtensionPoint xsi:type="MessageReadCommandSurface"> -->
-            <!-- <OfficeTab id="TabDefault">
-              <Group id="msgComposeCmdGroup">
-                <Label resid="groupLabel"/>
-                <Control xsi:type="Button" id="msgComposeInsertGist">
-                  <Label resid="insertGistLabel"/>
-                  <Supertip>
-                    <Title resid="insertGistTitle"/>
-                    <Description resid="insertGistDesc"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="icon16"/>
-                    <bt:Image size="32" resid="icon32"/>
-                    <bt:Image size="80" resid="icon80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="insertGistPaneUrl" />
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="msgComposeInsertDefaultGist">
-                  <Label resid="insertDefaultGistLabel"/>
-                  <Supertip>
-                    <Title resid="insertDefaultGistTitle"/>
-                    <Description resid="insertDefaultGistDesc"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="icon16"/>
-                    <bt:Image size="32" resid="icon32"/>
-                    <bt:Image size="80" resid="icon80"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>insertDefaultGist</FunctionName>
-                  </Action>
-                </Control>
-              </Group>
-            </OfficeTab>
-          </ExtensionPoint> -->
-
         </DesktopFormFactor>
       </Host>
     </Hosts>
@@ -165,19 +126,19 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="functionFile" DefaultValue="https://localhost:3000/function-file/function-file.html"/>
-        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://localhost:3000/index.html"/>
+        <!-- <bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://localhost:3000/index.html"/> -->
         <bt:Url id="postitNoteReadPanelUrl" DefaultValue="https://localhost:3000/postitNotesIndex.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="My Add-in Group"/>
-        <bt:String id="customTabLabel"  DefaultValue="My Add-in Tab"/>
-        <bt:String id="paneReadButtonLabel" DefaultValue="Display all properties"/>
-        <bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/>
+        <!-- <bt:String id="customTabLabel"  DefaultValue="My Add-in Tab"/> -->
+        <!-- <bt:String id="paneReadButtonLabel" DefaultValue="Display all properties"/>
+        <bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/> -->
         <bt:String id="postItAddButtonLabel" DefaultValue="Add a Post-It to Email"/>
         <bt:String id="postItAddSuperTipTitle" DefaultValue="Get all properties (To be changed)"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane displaying all available properties. This is an example of a button that opens a task pane."/>
+        <!-- <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane displaying all available properties. This is an example of a button that opens a task pane."/> -->
         <bt:String id="postItAddSuperTipDescription" DefaultValue="Adds a Post-it."/>
       </bt:LongStrings>
     </Resources>

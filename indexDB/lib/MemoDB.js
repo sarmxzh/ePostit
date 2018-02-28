@@ -1,13 +1,13 @@
 class MemoDB {
     async store(emailId, data) {
         const db = await this.openDB();
-        const objStore = db.transaction("items", "readwrite").objectStore("items");
-        return objStore.put({emailId, ...data});
+        const objStore = db.transaction(["items"], "readwrite").objectStore("items");
+        return objStore.put({emailId, data});
     }
 
     async retrieve(emailId) {
         const db = await this.openDB();
-        const objStore = db.transaction("items", "readwrite").objectStore("items");
+        const objStore = db.transaction(["items"], "readwrite").objectStore("items");
 
         return new Promise((res, rej) => {
             let request = objStore.get(emailId);
@@ -15,9 +15,30 @@ class MemoDB {
               // Handle errors!
             };
             request.onsuccess = function(event) {
-                res(request.result);
+                return res(request.result);
             };
         });
+    }
+
+    async searchNotes(phrase){
+      const db = await this.openDB();
+      const objStore = db.transaction(["items"], "readwrite").objectStore("items");
+      var emailIdArray = [];
+
+      var request = objStore.openCursor();
+      request.onsuccess = function(event) {
+        var emailNote = event.target.result;
+        // console.log(emailNote)
+        if (typeof emailNote != 'undefined') {
+          // console.log(emailNote.value.data)
+          if (emailNote.value.data.indexOf(phrase) !== -1) {
+            // emailIdArray.push(emailNote.value.emailId)
+            console.log("We found a row with value: " + JSON.stringify(emailNote.value.emailId));
+          }
+          emailNote.continue();
+        }
+        return emailIdArray;
+      };
     }
 
     openDB() {
@@ -36,5 +57,5 @@ class MemoDB {
         });
     }
 }
-MemoDB.DB_NAME = "PostItTag";
+MemoDB.DB_NAME = "ePostitDB"; //formally ePostit
 MemoDB.VERSION = 1;

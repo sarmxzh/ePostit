@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.components.css" />
 
   <link href="app.css" rel="stylesheet" type="text/css" />
+  <script src="indexDB/lib/MemoDB.js"></script>
 
   <style>
   *{
@@ -27,14 +28,6 @@
     /* color:#070707; */
   }
 
-  /* a{
-    color:#000000;
-    background:#60caff;
-    display:block;
-    height:300px;
-    width:200px;
-    padding:10px;
-  } */
   div{
     margin-bottom: 50px;
   }
@@ -50,7 +43,6 @@
 
 <body>
   <div>
-    <h2> Add Post-it </h2>
     <button id="addPostit"> Add Post-it </button>
   </div>
   <!-- <div>
@@ -62,28 +54,41 @@
   </div> -->
   <div id='searchFn'>
     <h2> Search </h2>
-    <input type="text">
+    <input type="text" id ="searchTxtBox">
   </div>
 
 <script>
-document.getElementById("addPostit").addEventListener("click", function() {
-  var postitTextBox = document.createElement('input');
-  postitTextBox.type = "text";
-  postitTextBox.classList = "postittext";
-  postitTextBox.id = "userInputPostitText";
-  postitTextBox.style.backgroundColor = "yellow";
-  document.body.insertBefore(document.createElement('div').appendChild(document.createElement('a').appendChild(postitTextBox)), document.getElementById("searchFn"))
-})
+Office.initialize = function () { };
+const db = new MemoDB();
 
-// document.getElementById("userInputPostItText").addEventListener("keypress", function(e){
-//   var key = e.keyCode;
-//   var textInput = document.getElementById("postItText")
-//     if (key === 13) {
-//       textInput.innerHTML = document.getElementById("userInputPostItText").value;
-//       textInput.setAttribute("type", "hidden");
-//       document.getElementById("userInputPostItText").style.display = "none";
-//     }
-// })
+document.getElementById("addPostit").addEventListener("click", function() {
+    var postitTextBox = document.createElement('input');
+    postitTextBox.type = "text";
+    postitTextBox.classList = "postittext";
+    postitTextBox.id = "userInputPostitText";
+    postitTextBox.style.backgroundColor = "yellow";
+    postitTextBox.addEventListener("keypress", function(e){
+      var key = e.keyCode;
+      if(key === 13){
+        var item = Office.context.mailbox.item;
+        console.log(item);
+        db.store(item.itemId, document.getElementById("userInputPostitText").value);
+        console.log(db.retrieve(item.itemId));
+        console.log(db);
+      }
+    });
+  document.body.insertBefore(document.createElement('div').appendChild(document.createElement('a').appendChild(postitTextBox)), document.getElementById("searchFn"));
+});
+
+var searchBox = document.getElementById("searchTxtBox");
+searchBox.addEventListener("keypress", function(e){
+  var key = e.keyCode;
+  if(key === 13){
+    var input = searchBox.value;
+    // var emails = db.searchNotes(input);
+    console.log(db.searchNotes(input))
+  }
+});
 </script>
 </body>
 
